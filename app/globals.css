@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #0F172A;
+  --card-bg: #FFFFFF;
+  --card-border: #E2E8F0;
+  --accent-blue: #2563EB;
+  --accent-cyan: #00B7DA;
+  --accent-emerald: #10B981;
+}
+
+.dark {
+  --background: #070B14;
+  --foreground: #F8FAFC;
+  --card-bg: #0F1629;
+  --card-border: rgba(56, 189, 248, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-blue: #2563EB;
+  --color-brand-cyan: #00B7DA;
+  --color-brand-emerald: #10B981;
+  --color-slate-925: #080C16;
+  --color-slate-850: #0F1629;
+  --color-slate-750: #19243C;
+  --shadow-1: 0px 4px 16px rgba(17, 17, 26, 0.05), 0px 8px 32px rgba(17, 17, 26, 0.05);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+}
+
+body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.dark body {
+  background-color: #070B14;
+  color: #F8FAFC;
+}
+
+::selection {
+  background-color: rgba(37, 99, 235, 0.25);
+  color: #0F172A;
+}
+
+.dark ::selection {
+  background-color: rgba(37, 99, 235, 0.45);
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #070B14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1E293B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Background Gradients & Glow Utilities */
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.08) 0%, rgba(0, 183, 218, 0.03) 45%, transparent 70%);
+}
+
+.dark .bg-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.15) 0%, rgba(0, 183, 218, 0.05) 45%, transparent 70%);
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #475569 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .text-gradient-primary {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 50%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(90deg, #0284C7 0%, #2563EB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .text-gradient-cyan {
+  background: linear-gradient(90deg, #38BDF8 0%, #2563EB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-brand {
+  background: linear-gradient(90deg, #0284C7 0%, #00B7DA 40%, #2563EB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .text-gradient-brand {
+  background: linear-gradient(90deg, #53EAFD 0%, #00B7DA 40%, #2563EB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Primary CTA Button Styling - High-Converting & Visual Domination */
+.btn-primary-fiverr {
+  background: linear-gradient(97.93deg, #00B7DA -10%, #2563EB 50%, #1D4ED8 100%);
+  box-shadow: 0 4px 18px -2px rgba(37, 99, 235, 0.35), 0 0 0 1px rgba(56, 189, 248, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #FFFFFF !important;
+}
+
+.btn-primary-fiverr:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 8px 25px -2px rgba(37, 99, 235, 0.5), 0 0 0 1px rgba(56, 189, 248, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.btn-primary-fiverr:active {
+  transform: translateY(0);
+}
+
+/* Secondary Action Button Styling */
+.btn-secondary-link {
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  color: #475569;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary-link:hover {
+  background: #F8FAFC;
+  color: #0F172A;
+  border-color: #94A3B8;
+  transform: translateY(-1px);
+}
+
+.dark .btn-secondary-link {
+  background: rgba(15, 23, 42, 0.7);
+  border-color: rgba(51, 65, 85, 0.8);
+  color: #94A3B8;
+}
+
+.dark .btn-secondary-link:hover {
+  background: rgba(30, 41, 59, 0.8);
+  color: #F8FAFC;
+  border-color: rgba(100, 116, 139, 0.8);
+}
+
+/* Subtle Card Glow Transitions */
+.card-hover-effect {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-4px);
+  border-color: rgba(37, 99, 235, 0.3);
+  box-shadow: 0 12px 28px -8px rgba(37, 99, 235, 0.12);
+}
+
+.dark .card-hover-effect:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 12px 30px -8px rgba(37, 99, 235, 0.15);
+}
+
+/* Marquee Infinite Motion */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
