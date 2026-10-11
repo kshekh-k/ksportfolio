@@ -27,7 +27,7 @@ export default function FiverrBridge() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6 }}
-            className="relative rounded-3xl p-8 sm:p-12 lg:p-14 bg-white dark:bg-gradient-to-b dark:from-[#0F1629] dark:to-[#0A0F1D] border border-slate-200 dark:border-slate-700/80 shadow-xl dark:shadow-2xl overflow-hidden"
+            className="relative rounded-3xl p-8 sm:p-12 lg:p-14 bg-white dark:bg-gradient-to-b dark:from-slate-850 dark:to-[#0A0F1D] border border-slate-200 dark:border-slate-700/80 shadow-xl dark:shadow-2xl overflow-hidden"
           >
             {/* Top Badge */}
             <div className="flex items-center justify-between flex-wrap gap-4 mb-8">

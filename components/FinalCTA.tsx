@@ -16,7 +16,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="relative rounded-xl p-10 sm:p-16 lg:p-20 bg-linear-to-b from-white via-slate-50 to-slate-100 dark:from-[#0F1629] dark:via-[#0B1020] dark:to-[#080C16] border border-blue-200 dark:border-cyan-500/30 shadow-2xl text-center flex flex-col items-center justify-center overflow-hidden"
+          className="relative rounded-xl p-10 sm:p-16 lg:p-20 bg-linear-to-b from-white via-slate-50 to-slate-100 dark:from-slate-850 dark:via-[#0B1020] dark:to-slate-925 shadow-1 text-center flex flex-col items-center justify-center overflow-hidden"
         >
           {/* Subtle Top Glowing Line */}
           <div className="absolute top-0 inset-x-0 h-px bg-linear-to-r from-transparent via-blue-500 dark:via-cyan-400 to-transparent" />
@@ -45,7 +45,7 @@ export default function FinalCTA() {
               whileHover={{ scale: 1.04, y: -2 }}
               whileTap={{ scale: 0.98 }}
               href="#work"
-              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 sm:px-10 sm:py-4.5 rounded-md text-base sm:text-lg font-bold text-white tracking-wide shadow-xl group transition-all bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:via-blue-500 hover:to-indigo-500"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 sm:px-10 sm:py-4.5 rounded-md text-base sm:text-lg font-bold text-white tracking-wide shadow-xl group transition-all bg-linear-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:via-blue-500 hover:to-indigo-500"
             >
               <Eye className="size-5 shrink-0" />
               <span>Explore selected work</span>

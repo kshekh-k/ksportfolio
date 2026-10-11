@@ -39,7 +39,7 @@ const STEPS = [
 
 export default function Process() {
   return (
-    <section className="py-24 lg:py-32 bg-white dark:bg-[#080C16] relative overflow-hidden transition-colors duration-200" id="process">
+    <section className="py-24 lg:py-32 bg-white dark:bg-slate-925 relative overflow-hidden transition-colors duration-200" id="process">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 relative">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 sm:mb-20">
@@ -67,7 +67,7 @@ export default function Process() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: idx * 0.12 }}
-                className="relative rounded-2xl p-6 bg-slate-50/90 dark:bg-[#0F1629] border border-slate-200 dark:border-slate-800/80 hover:border-blue-400 dark:hover:border-cyan-500/40 shadow-xs dark:shadow-none transition-all duration-300 flex flex-col justify-between group"
+                className="relative rounded-2xl p-6 bg-slate-50/90 dark:bg-slate-850 border border-slate-200 dark:border-slate-800/80 hover:border-blue-400 dark:hover:border-cyan-500/40 shadow-xs dark:shadow-none transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   {/* Step Number & Icon */}

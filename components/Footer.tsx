@@ -7,9 +7,20 @@ import { ArrowUp } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Footer() {
+  
+
+const [thisYear, setThisYear] = React.useState<number | null>(null);
+
+  React.useEffect(() => {
+    setThisYear(new Date().getFullYear());
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+
+
 
   return (
     <footer className="bg-slate-100 dark:bg-[#050810] border-t border-slate-200 dark:border-slate-800/80 pt-16 pb-24 md:pb-16 text-slate-600 dark:text-slate-400 relative transition-colors duration-200">
@@ -75,7 +86,7 @@ export default function Footer() {
         {/* Bottom Bar: Copyright & Back to Top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
           <div>
-            &copy; {new Date().getFullYear()} ksportfolio | Kshekh. All rights reserved.
+            &copy; {thisYear} ksportfolio | Kshekh. All rights reserved.
           </div>
 
           <motion.button

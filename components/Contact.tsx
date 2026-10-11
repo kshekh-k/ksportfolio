@@ -19,7 +19,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-24 lg:py-32 bg-white dark:bg-[#080C16] relative overflow-hidden transition-colors duration-200" id="contact">
+    <section className="py-24 lg:py-32 bg-white dark:bg-slate-925 relative overflow-hidden transition-colors duration-200" id="contact">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Direct Fiverr Callout (Primary conversion) */}
@@ -40,7 +40,7 @@ export default function Contact() {
             </p>
 
             {/* DOMINANT PRIMARY CTA */}
-            <div className="p-6 rounded-2xl bg-slate-50 dark:bg-[#0F1629] border border-blue-200 dark:border-blue-500/30 w-full mb-8 shadow-sm dark:shadow-xl">
+            <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-850 border border-blue-200 dark:border-blue-500/30 w-full mb-8 shadow-sm dark:shadow-xl">
               <div className="text-sm font-semibold text-slate-900 dark:text-white mb-2">
                 Fastest Response & Escrow Protection:
               </div>
@@ -72,7 +72,7 @@ export default function Contact() {
 
           {/* Right Column: Secondary Simple Contact Form */}
           <div className="lg:col-span-7">
-            <div className="rounded-3xl p-8 sm:p-10 bg-slate-50/90 dark:bg-[#0F1629] border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl">
+            <div className="rounded-3xl p-8 sm:p-10 bg-slate-50/90 dark:bg-slate-850 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl">
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
                 Or send a brief message
               </h3>

@@ -67,7 +67,7 @@ export default function TechStack() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-30px" }}
                 transition={{ duration: 0.4, delay: idx * 0.08 }}
-                className="p-6 rounded-2xl bg-white dark:bg-[#0F1629] border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 shadow-sm dark:shadow-none transition-all duration-200 flex flex-col justify-between group"
+                className="p-6 rounded-2xl bg-white dark:bg-slate-850 border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 shadow-sm dark:shadow-none transition-all duration-200 flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center gap-3 mb-5">

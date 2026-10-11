@@ -54,7 +54,7 @@ export default function PortfolioAbout() {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.65, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             whileHover={{ y: -4 }}
-            className="lg:col-span-5 bg-white dark:bg-[#0F1629] p-7 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl dark:shadow-none transition-all duration-300"
+            className="lg:col-span-5 bg-white dark:bg-slate-850 p-7 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl dark:shadow-none transition-all duration-300"
           >
             <div className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4">
               Core Expertise
