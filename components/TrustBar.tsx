@@ -22,7 +22,7 @@ export default function TrustBar() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-20px" }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="relative py-8 sm:py-12 lg:py-24 bg-slate-100/90 dark:bg-[#080D18] border-y border-slate-200 dark:border-slate-800/80 overflow-hidden select-none transition-colors duration-200"
+      className="relative py-3 bg-slate-100/90 dark:bg-[#080D18] border-y border-slate-200 dark:border-slate-800/80 overflow-hidden select-none transition-colors duration-200"
     >
       <div className="absolute left-0 top-0 bottom-0 w-20 bg-linear-to-r from-slate-100 dark:from-[#080D18] to-transparent z-10 pointer-events-none" />
       <div className="absolute right-0 top-0 bottom-0 w-20 bg-linear-to-l from-slate-100 dark:from-[#080D18] to-transparent z-10 pointer-events-none" />
