@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
   title: {
-    default: "Kamran Shekh — UI/UX Designer & Full-Stack Developer",
-    template: "%s | Kamran Shekh",
+    default: "Kshekh — UI/UX Designer & Full-Stack Developer",
+    template: "%s | Kshekh",
   },
   description:
     "Experienced UI/UX Designer & Full-Stack Web Developer creating high-converting websites, modern Next.js web apps, and design systems. Top Rated on Fiverr with 200+ projects delivered.",
