@@ -26,13 +26,13 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300  border-b border-slate-200/80 dark:border-slate-800/80 shadow-xs dark:shadow-lg dark:shadow-black/20 ${
           scrolled
-            ? "py-3 bg-white/85 dark:bg-slate-925/85 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800/80 shadow-xs dark:shadow-lg dark:shadow-black/20"
-            : "py-5 sm:py-6 bg-transparent"
+            ? "py-2 bg-white/85 dark:bg-slate-925/85 backdrop-blur-md"
+            : "py-2 sm:py-6 bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 relative">
           <div className="flex items-center justify-between gap-4">
             {/* Logo */}
             <a

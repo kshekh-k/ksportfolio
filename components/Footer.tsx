@@ -18,7 +18,7 @@ export default function Footer() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-30px" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 relative"
       >
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14 border-b border-slate-200 dark:border-slate-850">
           {/* Brand Info */}
@@ -28,20 +28,7 @@ export default function Footer() {
               className="flex items-center gap-3 mb-4 group"
               aria-label="Kamran Shekh Home"
             >
-              <div className="size-9 rounded-full bg-linear-to-tr from-cyan-400 via-blue-500 to-indigo-600 p-[1.5px] shrink-0">
-                <div className="w-full h-full rounded-full bg-white dark:bg-slate-925 flex items-center justify-center p-1.5 transition-colors">
-                  <Image
-                    src="/images/logo-icon.svg"
-                    alt="Kshekh Icon"
-                    width={28}
-                    height={28}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              </div>
-              <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors">
-                KSHEKH
-              </span>
+             <Image src="/images/kshekh-logo.svg" alt="Logo" width={100} height={100} className="w-28 lg:w-40 h-auto" />
             </a>
 
             <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-sm mb-6">
@@ -88,7 +75,7 @@ export default function Footer() {
         {/* Bottom Bar: Copyright & Back to Top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
           <div>
-            © 2026 Kamran Shekh (kshekh.com). All rights reserved.
+            &copy; {new Date().getFullYear()} ksportfolio | Kshekh. All rights reserved.
           </div>
 
           <motion.button

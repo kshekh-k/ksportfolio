@@ -20,7 +20,7 @@ export default function Contact() {
 
   return (
     <section className="py-24 lg:py-32 bg-white dark:bg-[#080C16] relative overflow-hidden transition-colors duration-200" id="contact">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Direct Fiverr Callout (Primary conversion) */}
           <div className="lg:col-span-5 flex flex-col items-start">

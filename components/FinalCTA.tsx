@@ -6,17 +6,17 @@ import { motion } from "framer-motion";
 
 export default function FinalCTA() {
   return (
-    <section className="py-24 lg:py-32 bg-slate-50 dark:bg-slate-950 relative overflow-hidden transition-colors duration-200">
+    <section className="py-8 sm:py-12 lg:py-24 bg-slate-50 dark:bg-slate-950 relative overflow-hidden transition-colors duration-200">
       {/* Background radial dramatic glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-225 h-137.5 bg-linear-to-r from-blue-500/10 via-cyan-500/10 to-indigo-500/10 dark:from-blue-600/20 dark:via-cyan-500/15 dark:to-indigo-600/20 rounded-full blur-[170px] pointer-events-none -z-10" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 relative">
         <motion.div
           initial={{ opacity: 0, scale: 0.94, y: 35 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="relative rounded-3xl p-10 sm:p-16 lg:p-20 bg-linear-to-b from-white via-slate-50 to-slate-100 dark:from-[#0F1629] dark:via-[#0B1020] dark:to-[#080C16] border border-blue-200 dark:border-cyan-500/30 shadow-2xl text-center flex flex-col items-center justify-center overflow-hidden"
+          className="relative rounded-xl p-10 sm:p-16 lg:p-20 bg-linear-to-b from-white via-slate-50 to-slate-100 dark:from-[#0F1629] dark:via-[#0B1020] dark:to-[#080C16] border border-blue-200 dark:border-cyan-500/30 shadow-2xl text-center flex flex-col items-center justify-center overflow-hidden"
         >
           {/* Subtle Top Glowing Line */}
           <div className="absolute top-0 inset-x-0 h-px bg-linear-to-r from-transparent via-blue-500 dark:via-cyan-400 to-transparent" />

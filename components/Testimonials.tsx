@@ -78,11 +78,11 @@ function TestimonialCard({ item }: { item: Testimonial }) {
 
 export default function Testimonials() {
   return (
-    <section className="py-24 lg:py-32 bg-white dark:bg-slate-925 relative overflow-hidden transition-colors duration-200" id="testimonials">
+    <section className="py-8 sm:py-12 lg:py-24 bg-white dark:bg-slate-925 relative overflow-hidden transition-colors duration-200" id="testimonials">
       {/* Background radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-125 bg-blue-500/5 dark:bg-blue-600/10 rounded-full blur-[180px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 relative mb-16">
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
