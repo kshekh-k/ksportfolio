@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useCallback, useEffect } from "react";
 import Image from "next/image";
-import { MoveHorizontal, Sparkles, AlertTriangle, CheckCircle2 } from "lucide-react";
+import { MoveHorizontal, Sparkles, AlertTriangle, CheckCircle2, CircleAlert, CircleCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function BeforeAfter() {
@@ -50,15 +50,17 @@ export default function BeforeAfter() {
   };
 
   return (
-    <section className="pt-24 lg:pt-32 bg-white dark:bg-slate-925 relative overflow-hidden transition-colors duration-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-8 sm:py-12 lg:py-24 bg-white dark:bg-slate-925 relative overflow-hidden transition-colors duration-200">
+     {/* Background radial glow */}
+           <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-150 h-150 bg-blue-500/5 dark:bg-blue-600/10 rounded-full blur-[180px] pointer-events-none" />
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 relative">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-3xl mx-auto text-center mb-16"
+          className="max-w-3xl mx-auto text-center mb-5 lg:mb-16"
         >
            <div className="bg-cyan-50 dark:bg-cyan-950/50 px-3.5 py-1.5 rounded-md inline-flex items-center justify-center gap-2 mb-6">
             <Sparkles className="size-3.5 text-cyan-600" />
@@ -74,7 +76,7 @@ export default function BeforeAfter() {
         </motion.div>
 
         {/* Interactive Comparison Slider Container */}
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Metrics Comparison Pill Bar */}
           <div className="grid grid-cols-2 gap-4 mb-6">
             <motion.div
@@ -84,13 +86,13 @@ export default function BeforeAfter() {
               transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="p-4 rounded-xl bg-rose-50/70 dark:bg-slate-900/80 flex items-center justify-between"
             >
-              <div className="flex items-center gap-2.5">
-                <AlertTriangle className="size-4 text-rose-600 dark:text-rose-400" />
+              <div className="flex items-center gap-1 sm:gap-2.5">
+                <CircleAlert className="size-4 text-rose-600 dark:text-rose-400" />
                 <span className="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-300">
                   Legacy Interface
                 </span>
               </div>
-              <span className="text-xs font-mono text-rose-600 dark:text-rose-400 font-semibold">
+              <span className="text-xs font-mono text-rose-600 dark:text-rose-400 font-semibold hidden lg:inline-block">
                 3.8s Load · 1.2% Conversion
               </span>
             </motion.div>
@@ -102,13 +104,13 @@ export default function BeforeAfter() {
               transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
               className="p-4 rounded-xl bg-emerald-50/70 dark:bg-slate-900/80 flex items-center justify-between"
             >
-              <div className="flex items-center gap-2.5">
-                <CheckCircle2 className="size-4 text-emerald-600 dark:text-emerald-400" />
+              <div className="flex items-center gap-1 sm:gap-2.5">
+                <CircleCheck className="size-4 text-emerald-600 dark:text-emerald-400" />
                 <span className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white">
                   Modernized System
                 </span>
               </div>
-              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 font-semibold">
+              <span className="text-xs font-mono text-emerald-600 dark:text-emerald-400 font-semibold hidden lg:inline-block">
                 0.6s Load · 4.8% Conversion
               </span>
             </motion.div>
@@ -126,7 +128,7 @@ export default function BeforeAfter() {
             onMouseLeave={handleMouseUp}
             onMouseMove={handleMouseMove}
             onTouchMove={handleTouchMove}
-            className="relative rounded-2xl bg-slate-950 border border-slate-300 dark:border-slate-700/80 shadow-xl dark:shadow-2xl overflow-hidden aspect-[16/9] sm:aspect-[16/8.5] select-none cursor-ew-resize group"
+            className="relative rounded-xl  shadow-1 dark:shadow-1 overflow-hidden aspect-video sm:aspect-16/8.5 select-none cursor-ew-resize group"
           >
             {/* AFTER Layer (Right / Full background) */}
             <div className="static inset-0 w-full h-full">
@@ -139,7 +141,7 @@ export default function BeforeAfter() {
               />
               <div className="absolute top-4 right-4 px-3 py-1.5 rounded-full bg-emerald-200/80 dark:bg-emerald-950/80 text-emerald-600 text-xs font-bold backdrop-blur-md z-10 flex items-center gap-1.5">
                 <span className="size-2 rounded-full bg-emerald-400" />
-                <span>AFTER (Engineered For Growth)</span>
+                <span>After</span>
               </div>
             </div>
 
@@ -160,7 +162,7 @@ export default function BeforeAfter() {
                 />
                 <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-rose-200/80 dark:bg-rose-800/80 text-rose-600 dark:text-rose-200 text-xs font-bold backdrop-blur-md z-20 flex items-center gap-1.5">
                   <span className="size-2 rounded-full bg-rose-400" />
-                  <span>BEFORE (Outdated & Friction Heavy)</span>
+                  <span>Before</span>
                 </div>
               </div>
             </div>

@@ -19,7 +19,7 @@ export default function FiverrBridge() {
       {/* Background radial accent glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-cyan-600/5 dark:bg-cyan-600/10 rounded-full blur-[180px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 relative">
         <div className="max-w-4xl mx-auto">
           {/* Main Card */}
           <motion.div
@@ -27,7 +27,7 @@ export default function FiverrBridge() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6 }}
-            className="relative rounded-3xl p-8 sm:p-12 lg:p-14 bg-white dark:bg-gradient-to-b dark:from-[#0F1629] dark:to-[#0A0F1D] border border-slate-200 dark:border-slate-700/80 shadow-xl dark:shadow-2xl overflow-hidden"
+            className="relative rounded-3xl p-8 sm:p-12 lg:p-14 bg-white dark:bg-gradient-to-b dark:from-slate-850 dark:to-[#0A0F1D] border border-slate-200 dark:border-slate-700/80 shadow-xl dark:shadow-2xl overflow-hidden"
           >
             {/* Top Badge */}
             <div className="flex items-center justify-between flex-wrap gap-4 mb-8">

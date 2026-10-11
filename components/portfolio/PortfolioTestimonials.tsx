@@ -52,7 +52,7 @@ export default function PortfolioTestimonials() {
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.6, delay: idx * 0.12, ease: [0.16, 1, 0.3, 1] }}
               whileHover={{ y: -6, scale: 1.015 }}
-              className="p-7 rounded-2xl bg-white dark:bg-[#0F1629] border border-slate-200 dark:border-slate-800 shadow-xs hover:shadow-xl dark:shadow-none hover:border-blue-500/40 dark:hover:border-cyan-500/40 flex flex-col justify-between transition-all duration-300 cursor-default"
+              className="p-7 rounded-2xl bg-white dark:bg-slate-850 border border-slate-200 dark:border-slate-800 shadow-xs hover:shadow-xl dark:shadow-none hover:border-blue-500/40 dark:hover:border-cyan-500/40 flex flex-col justify-between transition-all duration-300 cursor-default"
             >
               <blockquote className="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
                 &ldquo;{item.quote}&rdquo;

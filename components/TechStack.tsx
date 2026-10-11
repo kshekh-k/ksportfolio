@@ -40,7 +40,7 @@ const TECH_CATEGORIES = [
 export default function TechStack() {
   return (
     <section className="py-24 lg:py-28 bg-slate-50 dark:bg-[#070B14] relative overflow-hidden transition-colors duration-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 relative">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 dark:text-cyan-400 text-xs font-semibold tracking-wide uppercase mb-4">
@@ -67,7 +67,7 @@ export default function TechStack() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-30px" }}
                 transition={{ duration: 0.4, delay: idx * 0.08 }}
-                className="p-6 rounded-2xl bg-white dark:bg-[#0F1629] border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 shadow-sm dark:shadow-none transition-all duration-200 flex flex-col justify-between group"
+                className="p-6 rounded-2xl bg-white dark:bg-slate-850 border border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700 shadow-sm dark:shadow-none transition-all duration-200 flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center gap-3 mb-5">

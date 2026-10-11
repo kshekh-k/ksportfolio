@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[92vh] py-20 lg:pt-40 lg:pb-28 overflow-hidden flex flex-col justify-center bg-slate-50 dark:bg-[#070B14] transition-colors duration-200">
+    <section className="relative min-h-[92vh] py-20 lg:pt-32 lg:pb-20 overflow-hidden flex flex-col justify-center bg-slate-50 dark:bg-[#070B14] transition-colors duration-200">
       {/* Subtle Ambient Radial Lighting */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-125 bg-blue-500/10 dark:bg-blue-600/15 rounded-full blur-[140px] pointer-events-none -z-10" />
       <div className="absolute top-1/3 left-1/4 w-112.5 h-112.5 bg-cyan-500/10 rounded-full blur-[160px] pointer-events-none -z-10" />
@@ -26,8 +26,8 @@ export default function Hero() {
         }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 relative w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-8 items-center">
           {/* Left Column: Value Prop, Headline, CTAs, Credibility */}
           <div className="lg:col-span-6 flex flex-col items-start text-left z-10">
             {/* Availability Status Badge */}
@@ -35,7 +35,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="bg-cyan-50 dark:bg-cyan-950/50 px-3.5 py-1.5 rounded-md inline-flex items-center justify-center gap-2 mb-6"
+              className="bg-cyan-50 dark:bg-cyan-950/50 px-3.5 py-1.5 rounded-md hidden lg:inline-flex items-center justify-center gap-2 mb-6"
             >
               <span className="relative flex size-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
@@ -51,7 +51,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold tracking-tight text-slate-950 dark:text-white leading-[1.08] mb-6"
+              className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold tracking-tight text-slate-950 dark:text-white mb-3 md:mb-6"
             >
               Websites that turn{" "}
               <span className="text-gradient-brand">Attention</span> into{" "}
@@ -65,7 +65,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.25, ease: "easeOut" }}
               className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 font-normal leading-relaxed max-w-2xl mb-8"
             >
-              UI/UX Designer & Full-Stack Developer with 12+ years of experience
+              UI/UX Designer & Full-Stack Developer with 15+ years of experience
               engineering fast, high-converting digital products, Next.js web
               apps, and bespoke brand platforms.
             </motion.p>
@@ -75,7 +75,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.35 }}
-              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-12"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-6 lg:mb-12"
             >
               {/* Visually Secondary Action */}
               <motion.a
@@ -96,7 +96,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.45 }}
-              className="pt-6 border-t border-slate-200 dark:border-slate-800/80 w-full grid grid-cols-3 gap-4 sm:gap-6"
+              className="pt-3 lg:pt-6 border-t border-slate-200 dark:border-slate-800/80 w-full grid grid-cols-3 gap-4 sm:gap-6"
             >
               <motion.div
                 whileHover={{ y: -2 }}

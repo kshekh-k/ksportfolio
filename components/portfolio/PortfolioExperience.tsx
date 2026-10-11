@@ -28,7 +28,7 @@ const STATS = [
 
 export default function PortfolioExperience() {
   return (
-    <section className="py-16 sm:py-20 bg-white dark:bg-[#080C16] border-y border-slate-200/80 dark:border-slate-800/80 transition-colors duration-200">
+    <section className="py-16 sm:py-20 bg-white dark:bg-slate-925 border-y border-slate-200/80 dark:border-slate-800/80 transition-colors duration-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {STATS.map((stat, i) => (

@@ -23,17 +23,21 @@ export default function Home() {
         {/* 2. Trust / Credibility Marquee Strip */}
         <TrustBar />
 
+         {/* 5. Selected Work - Main Portfolio Showcases with Challenge/Work/Result */}
+        <FeaturedWork />
+
+          {/* 6. Before / After Interactive Visual Transformation */}
+        <BeforeAfter />
+
         {/* 3. Problem / Value Proposition Section */}
         <ValueSection />
 
         {/* 4. Services - Bento Grid Architecture */}
         <ServicesBento />
 
-        {/* 5. Selected Work - Main Portfolio Showcases with Challenge/Work/Result */}
-        <FeaturedWork />
+       
 
-        {/* 6. Before / After Interactive Visual Transformation */}
-        <BeforeAfter />
+      
 
         {/* 7. Testimonials / Verified Client Social Proof Marquee */}
         <Testimonials />

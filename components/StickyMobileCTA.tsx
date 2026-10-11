@@ -25,7 +25,7 @@ export default function StickyMobileCTA() {
 
   return (
     <div className="fixed bottom-4 inset-x-4 z-50 md:hidden animate-in fade-in slide-in-from-bottom-4 duration-300">
-      <div className="bg-white/95 dark:bg-[#080C16]/90 backdrop-blur-xl border border-slate-200 dark:border-slate-700/80 p-2.5 rounded-2xl shadow-xl dark:shadow-2xl flex items-center justify-between gap-3">
+      <div className="bg-white/95 dark:bg-slate-925/90 backdrop-blur-xl border border-slate-200 dark:border-slate-700/80 p-2.5 rounded-2xl shadow-xl dark:shadow-2xl flex items-center justify-between gap-3">
         <div className="flex flex-col pl-2">
           <span className="text-xs font-bold text-slate-900 dark:text-white tracking-tight">
             Ready to collaborate?

@@ -36,7 +36,7 @@ export default function PortfolioNav() {
             aria-label="Kamran Shekh Portfolio"
           >
             <div className="size-8 rounded-full overflow-hidden bg-gradient-to-tr from-cyan-400 via-blue-500 to-indigo-600 p-[1.5px] shrink-0">
-              <div className="w-full h-full rounded-full bg-white dark:bg-[#080C16] flex items-center justify-center p-1">
+              <div className="w-full h-full rounded-full bg-white dark:bg-slate-925 flex items-center justify-center p-1">
                 <Image
                   src="/images/logo-icon.svg"
                   alt="Kamran Shekh"

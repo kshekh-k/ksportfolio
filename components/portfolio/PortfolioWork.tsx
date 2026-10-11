@@ -16,7 +16,7 @@ function ProjectCardLarge({ project }: { project: Project }) {
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       whileHover={{ y: -5 }}
-      className="group relative rounded-2xl bg-white dark:bg-[#0F1629] border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl dark:shadow-none transition-all duration-300"
+      className="group relative rounded-2xl bg-white dark:bg-slate-850 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl dark:shadow-none transition-all duration-300"
     >
       {/* Visual Window Mockup */}
       <div className="relative aspect-[16/10] sm:aspect-[16/8.5] bg-slate-950 overflow-hidden border-b border-slate-200 dark:border-slate-800">
@@ -117,7 +117,7 @@ function ProjectCardTwoColumn({ project, isLeft = false }: { project: Project; i
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.65, delay: isLeft ? 0 : 0.1, ease: [0.16, 1, 0.3, 1] }}
       whileHover={{ y: -6 }}
-      className="group relative rounded-2xl bg-white dark:bg-[#0F1629] border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl dark:shadow-none transition-all duration-300 flex flex-col justify-between"
+      className="group relative rounded-2xl bg-white dark:bg-slate-850 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl dark:shadow-none transition-all duration-300 flex flex-col justify-between"
     >
       <div>
         {/* Visual Preview */}

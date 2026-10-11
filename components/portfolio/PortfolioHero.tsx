@@ -72,7 +72,7 @@ export default function PortfolioHero() {
           className="relative w-full"
         >
           {/* Main Primary Browser Showcase */}
-          <div className="relative rounded-2xl bg-white dark:bg-[#0F1629] border border-slate-200 dark:border-slate-800 shadow-xl dark:shadow-2xl overflow-hidden">
+          <div className="relative rounded-2xl bg-white dark:bg-slate-850 border border-slate-200 dark:border-slate-800 shadow-xl dark:shadow-2xl overflow-hidden">
             {/* Minimal Window Header */}
             <div className="h-9 bg-slate-100 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-4">
               <div className="flex items-center gap-2">
@@ -109,7 +109,7 @@ export default function PortfolioHero() {
               y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 },
             }}
             whileHover={{ scale: 1.05, y: -4 }}
-            className="absolute -bottom-6 -left-4 sm:-bottom-8 sm:-left-6 w-44 sm:w-64 rounded-xl bg-white/95 dark:bg-[#0F1629]/95 border border-slate-200 dark:border-slate-700/80 shadow-2xl p-2.5 sm:p-3 backdrop-blur-md hidden sm:block cursor-pointer transition-shadow hover:shadow-cyan-500/10 hover:border-blue-500/40"
+            className="absolute -bottom-6 -left-4 sm:-bottom-8 sm:-left-6 w-44 sm:w-64 rounded-xl bg-white/95 dark:bg-slate-850/95 border border-slate-200 dark:border-slate-700/80 shadow-2xl p-2.5 sm:p-3 backdrop-blur-md hidden sm:block cursor-pointer transition-shadow hover:shadow-cyan-500/10 hover:border-blue-500/40"
           >
             <div className="relative aspect-[16/10] rounded-lg overflow-hidden bg-slate-900 mb-2">
               <Image
@@ -138,7 +138,7 @@ export default function PortfolioHero() {
               y: { duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.5 },
             }}
             whileHover={{ scale: 1.05, y: -4 }}
-            className="absolute -top-6 -right-4 sm:-top-8 sm:-right-6 w-48 sm:w-64 rounded-xl bg-white/95 dark:bg-[#0F1629]/95 border border-slate-200 dark:border-slate-700/80 shadow-2xl p-2.5 sm:p-3 backdrop-blur-md hidden md:block cursor-pointer transition-shadow hover:shadow-indigo-500/10 hover:border-cyan-500/40"
+            className="absolute -top-6 -right-4 sm:-top-8 sm:-right-6 w-48 sm:w-64 rounded-xl bg-white/95 dark:bg-slate-850/95 border border-slate-200 dark:border-slate-700/80 shadow-2xl p-2.5 sm:p-3 backdrop-blur-md hidden md:block cursor-pointer transition-shadow hover:shadow-indigo-500/10 hover:border-cyan-500/40"
           >
             <div className="relative aspect-[16/10] rounded-lg overflow-hidden bg-slate-900 mb-2">
               <Image
